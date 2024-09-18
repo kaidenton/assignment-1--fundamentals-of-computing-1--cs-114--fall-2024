@@ -49,6 +49,6 @@ public class Assignment1 {
     num1 = generator.nextInt(16353) + 32;
     System.out.println("Random number generated. Continuing...");
 
-    
+    System.out.println("Your new string is " + celsiusTemp + reverseLetters + num1);
   }
 }
