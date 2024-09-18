@@ -29,12 +29,26 @@ public class Assignment1 {
 
     celsiusTemp = (fahrenheitTemp - BASE) * CONVERSION_FACTOR;
 
+    String userInput;
+    String removeLetters;
+    String reverseLetters;
 
+    scan.nextLine();
+
+    System.out.println("Please enter a 5-character string: ");
+    userInput = scan.nextLine();
+    removeLetters = userInput.substring(1, 4);
+    reverseLetters = new StringBuilder(removeLetters).reverse().toString();
+
+
+    scan.close();
 
     Random generator = new Random();
     int num1;
 
     num1 = generator.nextInt(16353) + 32;
     System.out.println("Random number generated. Continuing...");
+
+    
   }
 }
