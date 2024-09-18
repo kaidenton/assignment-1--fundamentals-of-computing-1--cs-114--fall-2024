@@ -28,5 +28,13 @@ public class Assignment1 {
     fahrenheitTemp = scan.nextInt();
 
     celsiusTemp = (fahrenheitTemp - BASE) * CONVERSION_FACTOR;
+
+
+
+    Random generator = new Random();
+    int num1;
+
+    num1 = generator.nextInt(16353) + 32;
+    System.out.println("Random number generated. Continuing...");
   }
 }
